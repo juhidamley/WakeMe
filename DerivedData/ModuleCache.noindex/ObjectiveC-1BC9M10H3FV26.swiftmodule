@@ -1,0 +1,52 @@
+---
+path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/prebuilt-modules/26.1/ObjectiveC.swiftmodule/arm64e-apple-watchos.swiftmodule'
+dependencies:
+  - mtime:           1761040362000000000
+    path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/prebuilt-modules/26.1/ObjectiveC.swiftmodule/arm64e-apple-watchos.swiftmodule'
+    size:            50108
+  - mtime:           1760149230000000000
+    path:            'usr/lib/swift/Swift.swiftmodule/arm64e-apple-watchos.swiftinterface'
+    size:            2257683
+    sdk_relative:    true
+  - mtime:           1760150819000000000
+    path:            'usr/include/_DarwinFoundation2.apinotes'
+    size:            1145
+    sdk_relative:    true
+  - mtime:           1760148550000000000
+    path:            'usr/include/ObjectiveC.apinotes'
+    size:            11147
+    sdk_relative:    true
+  - mtime:           1760150854000000000
+    path:            'usr/lib/swift/_DarwinFoundation1.swiftmodule/arm64e-apple-watchos.swiftinterface'
+    size:            18813
+    sdk_relative:    true
+  - mtime:           1760150859000000000
+    path:            'usr/lib/swift/_DarwinFoundation2.swiftmodule/arm64e-apple-watchos.swiftinterface'
+    size:            2632
+    sdk_relative:    true
+  - mtime:           1760150863000000000
+    path:            'usr/lib/swift/_DarwinFoundation3.swiftmodule/arm64e-apple-watchos.swiftinterface'
+    size:            1577
+    sdk_relative:    true
+  - mtime:           1760150192000000000
+    path:            'usr/lib/swift/_Builtin_float.swiftmodule/arm64e-apple-watchos.swiftinterface'
+    size:            4317
+    sdk_relative:    true
+  - mtime:           1760150873000000000
+    path:            'usr/lib/swift/Darwin.swiftmodule/arm64e-apple-watchos.swiftinterface'
+    size:            19719
+    sdk_relative:    true
+  - mtime:           1760151390000000000
+    path:            'usr/lib/swift/_Concurrency.swiftmodule/arm64e-apple-watchos.swiftinterface'
+    size:            407499
+    sdk_relative:    true
+  - mtime:           1760151457000000000
+    path:            'usr/lib/swift/_StringProcessing.swiftmodule/arm64e-apple-watchos.swiftinterface'
+    size:            24463
+    sdk_relative:    true
+  - mtime:           1760151877000000000
+    path:            'usr/lib/swift/ObjectiveC.swiftmodule/arm64e-apple-watchos.swiftinterface'
+    size:            6698
+    sdk_relative:    true
+version:         1
+...

@@ -1,0 +1,22 @@
+{
+  "" : {
+    "dependencies" : "/Users/juhidamley/Documents/WakeMe/DerivedData/WakeMe/Index.noindex/Build/Intermediates.noindex/WakeMe.build/Debug-watchos/WakeMeWatch Watch App.build/Objects-normal/arm64/WakeMeWatch Watch App-primary.d",
+    "diagnostics" : "/Users/juhidamley/Documents/WakeMe/DerivedData/WakeMe/Index.noindex/Build/Intermediates.noindex/WakeMe.build/Debug-watchos/WakeMeWatch Watch App.build/Objects-normal/arm64/WakeMeWatch Watch App-primary.dia",
+    "emit-module-dependencies" : "/Users/juhidamley/Documents/WakeMe/DerivedData/WakeMe/Index.noindex/Build/Intermediates.noindex/WakeMe.build/Debug-watchos/WakeMeWatch Watch App.build/Objects-normal/arm64/WakeMeWatch Watch App-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/juhidamley/Documents/WakeMe/DerivedData/WakeMe/Index.noindex/Build/Intermediates.noindex/WakeMe.build/Debug-watchos/WakeMeWatch Watch App.build/Objects-normal/arm64/WakeMeWatch Watch App-primary-emit-module.dia",
+    "pch" : "/Users/juhidamley/Documents/WakeMe/DerivedData/WakeMe/Index.noindex/Build/Intermediates.noindex/WakeMe.build/Debug-watchos/WakeMeWatch Watch App.build/Objects-normal/arm64/WakeMeWatch Watch App-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/juhidamley/Documents/WakeMe/DerivedData/WakeMe/Index.noindex/Build/Intermediates.noindex/WakeMe.build/Debug-watchos/WakeMeWatch Watch App.build/Objects-normal/arm64/WakeMeWatch Watch App-primary.swiftdeps"
+  },
+  "/Users/juhidamley/Documents/WakeMe/DerivedData/WakeMe/Index.noindex/Build/Intermediates.noindex/WakeMe.build/Debug-watchos/WakeMeWatch Watch App.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+
+  },
+  "/Users/juhidamley/Documents/WakeMe/WakeMeWatch Watch App/ContentView.swift" : {
+
+  },
+  "/Users/juhidamley/Documents/WakeMe/WakeMeWatch Watch App/SessionManager.swift" : {
+
+  },
+  "/Users/juhidamley/Documents/WakeMe/WakeMeWatch Watch App/WakeMeWatchApp.swift" : {
+
+  }
+}
