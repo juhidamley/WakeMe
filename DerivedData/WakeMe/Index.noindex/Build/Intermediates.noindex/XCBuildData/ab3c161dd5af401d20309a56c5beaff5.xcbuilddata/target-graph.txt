@@ -1,5 +1,0 @@
-Target dependency graph (4 targets)
-Target 'WakeMeWatch Watch App' in project 'WakeMe' (no dependencies)
-Target 'WakeMeWatch Watch App' in project 'WakeMe' (no dependencies)
-Target 'WakeMe' in project 'WakeMe' (no dependencies)
-Target 'WakeMe' in project 'WakeMe' (no dependencies)
