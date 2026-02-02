@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    // 1. Inject the Connector
+    @StateObject private var connector = WatchConnector()
     @State private var threshold = 60.0
     @State private var isSilentMode = true
-    @State private var isClassActive = false
-    @State private var currentHeartRate: Double = 0
     
     var body: some View {
         NavigationStack {
@@ -13,24 +13,25 @@ struct ContentView: View {
                     HStack {
                         Text("Heart Rate")
                         Spacer()
-                        Text("\(Int(currentHeartRate)) BPM")
-                            .foregroundColor(isClassActive ? .green : .gray)
+                        // 2. Read from Connector
+                        Text("\(Int(connector.currentHeartRate)) BPM")
+                            .foregroundColor(connector.isClassActive ? .green : .gray)
                             .fontWeight(.bold)
                     }
                     
                     Button(action: {
-                        isClassActive.toggle()
-                        // TODO: Connect to watch session
+                        toggleSession()
                     }) {
                         HStack {
-                            Image(systemName: isClassActive ? "pause.fill" : "play.fill")
-                            Text(isClassActive ? "End Class" : "Start Class")
+                            // 3. Bind to Connector State
+                            Image(systemName: connector.isClassActive ? "pause.fill" : "play.fill")
+                            Text(connector.isClassActive ? "End Class" : "Start Class")
                                 .fontWeight(.semibold)
                         }
                         .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(isClassActive ? .red : .blue)
+                    .tint(connector.isClassActive ? .red : .blue)
                 }
                 
                 Section("Settings") {
@@ -40,13 +41,18 @@ struct ContentView: View {
                         Text("\(Int(threshold)) BPM")
                             .foregroundColor(.secondary)
                     }
-                    
                     Slider(value: $threshold, in: 40...100, step: 5)
-                    
                     Toggle("Silent Mode", isOn: $isSilentMode)
                 }
             }
             .navigationTitle("WakeMe")
         }
+    }
+    
+    // 4. Send Command
+    func toggleSession() {
+        let newState = !connector.isClassActive
+        connector.isClassActive = newState
+        connector.sendActionToWatch(start: newState, threshold: threshold)
     }
 }
