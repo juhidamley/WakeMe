@@ -6,8 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FF7E6F142F30ADB8009929B9 /* WakeMeWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FF7E6F0A2F30ADB4009929B9 /* WakeMeWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF7E6F122F30ADB8009929B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF7E6EF02F30AD6A009929B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF7E6F092F30ADB4009929B9;
+			remoteInfo = "WakeMeWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF7E6F182F30ADB8009929B9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FF7E6F142F30ADB8009929B9 /* WakeMeWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FF7E6EF82F30AD6A009929B9 /* WakeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7E6F0A2F30ADB4009929B9 /* WakeMeWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WakeMeWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +45,22 @@
 			path = WakeMe;
 			sourceTree = "<group>";
 		};
+		FF7E6F0B2F30ADB4009929B9 /* WakeMeWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WakeMeWatch Watch App";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FF7E6EF52F30AD6A009929B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7E6F072F30ADB4009929B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				FF7E6EFA2F30AD6A009929B9 /* WakeMe */,
+				FF7E6F0B2F30ADB4009929B9 /* WakeMeWatch Watch App */,
 				FF7E6EF92F30AD6A009929B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				FF7E6EF82F30AD6A009929B9 /* WakeMe.app */,
+				FF7E6F0A2F30ADB4009929B9 /* WakeMeWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +98,12 @@
 				FF7E6EF42F30AD6A009929B9 /* Sources */,
 				FF7E6EF52F30AD6A009929B9 /* Frameworks */,
 				FF7E6EF62F30AD6A009929B9 /* Resources */,
+				FF7E6F182F30ADB8009929B9 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FF7E6F132F30ADB8009929B9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				FF7E6EFA2F30AD6A009929B9 /* WakeMe */,
@@ -68,6 +113,28 @@
 			);
 			productName = WakeMe;
 			productReference = FF7E6EF82F30AD6A009929B9 /* WakeMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF7E6F092F30ADB4009929B9 /* WakeMeWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7E6F152F30ADB8009929B9 /* Build configuration list for PBXNativeTarget "WakeMeWatch Watch App" */;
+			buildPhases = (
+				FF7E6F062F30ADB4009929B9 /* Sources */,
+				FF7E6F072F30ADB4009929B9 /* Frameworks */,
+				FF7E6F082F30ADB4009929B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FF7E6F0B2F30ADB4009929B9 /* WakeMeWatch Watch App */,
+			);
+			name = "WakeMeWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "WakeMeWatch Watch App";
+			productReference = FF7E6F0A2F30ADB4009929B9 /* WakeMeWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +148,9 @@
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					FF7E6EF72F30AD6A009929B9 = {
+						CreatedOnToolsVersion = 26.1;
+					};
+					FF7E6F092F30ADB4009929B9 = {
 						CreatedOnToolsVersion = 26.1;
 					};
 				};
@@ -100,12 +170,20 @@
 			projectRoot = "";
 			targets = (
 				FF7E6EF72F30AD6A009929B9 /* WakeMe */,
+				FF7E6F092F30ADB4009929B9 /* WakeMeWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FF7E6EF62F30AD6A009929B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7E6F082F30ADB4009929B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +200,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF7E6F062F30ADB4009929B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF7E6F132F30ADB8009929B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF7E6F092F30ADB4009929B9 /* WakeMeWatch Watch App */;
+			targetProxy = FF7E6F122F30ADB8009929B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FF7E6F012F30AD6F009929B9 /* Debug */ = {
@@ -306,6 +399,70 @@
 			};
 			name = Release;
 		};
+		FF7E6F162F30ADB8009929B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WakeMeWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.juhidamley.WakeMe;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juhidamley.WakeMe.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.1;
+			};
+			name = Debug;
+		};
+		FF7E6F172F30ADB8009929B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WakeMeWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.juhidamley.WakeMe;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juhidamley.WakeMe.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +480,15 @@
 			buildConfigurations = (
 				FF7E6F042F30AD6F009929B9 /* Debug */,
 				FF7E6F052F30AD6F009929B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7E6F152F30ADB8009929B9 /* Build configuration list for PBXNativeTarget "WakeMeWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7E6F162F30ADB8009929B9 /* Debug */,
+				FF7E6F172F30ADB8009929B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

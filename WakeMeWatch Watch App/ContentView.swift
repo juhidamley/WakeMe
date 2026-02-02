@@ -1,24 +1,12 @@
-//
-//  ContentView.swift
-//  WakeMeWatch Watch App
-//
-//  Created by Juhi Damley on 2/2/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Image(systemName: "bolt.fill")
+                .foregroundStyle(.yellow)
+                .font(.title)
+            Text("Monitoring...")
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

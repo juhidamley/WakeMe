@@ -1,24 +1,21 @@
-//
-//  ContentView.swift
-//  WakeMe
-//
-//  Created by Juhi Damley on 2/2/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Control Center")
+                .font(.largeTitle)
+                .bold()
+            
+            // This is just a UI placeholder for now
+            List {
+                Section(header: Text("Settings")) {
+                    Toggle("Deep Sleep Mode", isOn: .constant(true))
+                    Button("Test Alarm") {
+                        // We will hook this up to the Watch later
+                    }
+                }
+            }
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
